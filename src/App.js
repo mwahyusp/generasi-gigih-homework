@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import PlaylistCard from "./components/PlaylistCard";
+import data from "./data/samplePlaylist";
+import "./App.css";
 
 function App() {
+  // console.log(process.env.REACT_APP_SPOTIFY_CLIENT_ID)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Create Playlist</h1>
+      <div className="playlistContainer">
+        <PlaylistCard data={data} />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default (App);
