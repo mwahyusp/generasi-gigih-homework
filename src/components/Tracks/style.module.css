@@ -1,0 +1,12 @@
+.trackList {
+    list-style: none;
+    display: grid;
+    grid-template-columns: max-content;
+    margin: 0% 34%;
+    padding: 0px;
+}
+
+.trackList li {
+    margin: .5rem;
+    width: 300px;
+}

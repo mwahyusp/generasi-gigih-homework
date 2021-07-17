@@ -1,17 +1,15 @@
-import PlaylistCard from "./components/PlaylistCard";
-import data from "./data/samplePlaylist";
 import "./App.css";
+import Tracks from './components/Tracks'
+// eslint-disable-next-line no-unused-vars
+import Player from './components/Player'
+import data from "./data/sampleData";
 
 function App() {
-  // console.log(process.env.REACT_APP_SPOTIFY_CLIENT_ID)
   return (
-    <div>
-      <h1>Create Playlist</h1>
-      <div className="playlistContainer">
-        <PlaylistCard data={data} />
-      </div>
+    <div className="App">
+      <Tracks data={data} />
     </div>
   );
 }
 
-export default (App);
+export default App;

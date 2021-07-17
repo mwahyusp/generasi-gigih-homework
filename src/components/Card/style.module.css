@@ -1,0 +1,9 @@
+.Card {
+    display: block;
+    padding: .75rem;
+    border-radius: 8px;
+    background-color: var(--dark-foreground-color);
+    color: var(--dark-text-color);
+    text-align: center;
+    border: 1px solid black;
+}
