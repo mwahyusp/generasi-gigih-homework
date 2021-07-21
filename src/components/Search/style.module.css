@@ -1,0 +1,15 @@
+input{
+    border: none;
+    border-bottom: 2px solid #F0F3F9;
+    outline: none;
+    padding: 8px 12px;
+}
+
+.btn{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: none;
+    background: none;
+    padding: 8px 12px;  
+    cursor: pointer;
+}

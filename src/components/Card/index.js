@@ -1,9 +1,25 @@
-import style from "./style.module.css";
+import React from "react";
+import "./Card.css";
+import Image from "../Image";
+import Button from "../Button";
+import Description from "../Description";
 
-const Card = props => (
-  <div className={`${style.Card} ${props.extraClass}`} >
-    {props.children}
-  </div>
-);
+function Card(props) {
+  return (
+    <div className="card">
+      <div className="container">
+        <Image src={props.image} />
+        <div className="right">
+          <Description
+            title={props.title}
+            artist={props.artist}
+            album={props.album}
+          />
+          <Button text="SELECT" url={props.url} />
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default Card;
