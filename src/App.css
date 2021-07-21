@@ -1,9 +1,12 @@
+body{
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  min-height: 100vh;
-  background-color: var(--white-background-color);
-  color: var(--dark-foreground-color);
+  justify-content: center;
+  margin: 0 auto;
 }

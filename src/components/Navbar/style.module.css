@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  border-bottom: 2px solid #F0F3F9;
+  padding: 20px;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(108, 111, 119);
+}
