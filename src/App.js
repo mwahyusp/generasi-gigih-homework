@@ -1,10 +1,10 @@
 import "./App.css";
-import CardItem from "./Pages/CardItem";
+import CreatePlaylist from "./Components/CreatePlaylist";
 
 function App() {
   return (
     <div className="App">
-      <CardItem />
+      <CreatePlaylist />
     </div>
   );
 }

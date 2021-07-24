@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Search from "../Search/Index";
+import Search from "../Search";
 import Button from "../Button";
 import Navbar from  "./style.module.css";
 

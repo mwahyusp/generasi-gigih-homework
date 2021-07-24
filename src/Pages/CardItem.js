@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/Card/";
-import Data from "../data/sampleData";
-import "../components/Card/Card.css";
-import Navbar from "../components/Navbar";
+import Card from "../Components/Card/";
+import Data from "../Data/sampleData";
+import "../Components/Card/Card.css";
+import Navbar from "../Components/Navbar";
 
 function CardItem() {
   const [Token, setToken] = useState("");
@@ -49,7 +49,7 @@ function CardItem() {
       }
     })
       .then(res => res.json())
-      .then(data => setTrack(data.tracks.items));
+      .then(Data => setTrack(Data.tracks.items));
   };
 
   console.log(Track);
