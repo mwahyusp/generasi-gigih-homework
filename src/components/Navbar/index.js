@@ -1,29 +1,16 @@
-import React, { useState, useEffect } from "react";
-import Search from "../Search";
-import Button from "../Button";
-import Navbar from  "./style.module.css";
+import React from "react";
+import Search from "../Search/index";
+import Navbar from "./style.module.css";
 
-function Index({ handleSearch, handleClick }) {
-  const [Auth, setAuth] = useState(false);
-
-  useEffect(() => {
-    if (window.location.hash) {
-      setAuth(true);
-    }
-  }, []);
-
+function Index({ handleSearch }) {
   return (
     <header>
-      <div className={Navbar.logo}>Music Player</div>
-      {Auth ? (
+      <div className={Navbar.logo}>JOFY</div>
+      {
         <div>
           <Search handleSubmit={handleSearch} />
         </div>
-      ) : (
-        <div onClick={handleClick}>
-          <Button text="Log in Spotify"/>
-        </div>
-      )}
+      }
     </header>
   );
 }
