@@ -4,7 +4,7 @@ import Search from "./style.module.css";
 function Index({ handleSubmit }) {
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="query" placeholder="Search Song.." />
+      <input className={Search.input} type="text" name="query" placeholder="Search Song.." />
       <button className={Search.btn} type="submit">
         <i className="fas fa-search" />
       </button>

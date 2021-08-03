@@ -1,0 +1,24 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(179, 181, 219);
+  padding: 5px;
+  border-radius: 50px;
+}
+
+.profile p{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-weight: 900;
+  margin: 0 7px;
+}
+
+.image{
+  height: 25px;
+}
+
+.image img{
+  height: 100%;
+  border-radius: 50px;
+}

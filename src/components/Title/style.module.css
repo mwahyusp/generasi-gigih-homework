@@ -1,5 +1,7 @@
 h2{
-    font-size: 20px;
-    margin: 0 0 5px;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
     width: 100%;
+    color: rgb(176, 178, 206);
 }
