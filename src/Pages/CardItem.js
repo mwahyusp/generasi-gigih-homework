@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Card from "../components/Card/";
-import Data from "../data/sampleData";
-import "../components/Card/Card.css";
-import Navbar from "../components/Navbar";
+import Card from "../Components/Card/";
+import Data from "../Data/sampleData";
+import "../Components/Card/Card.css";
+import Navbar from "../Components/Navbar";
 
 function CardItem() {
   const [Token, setToken] = useState("");
@@ -11,7 +11,7 @@ function CardItem() {
   const handleClick = () => {
     const Client_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
     const Response_Type = "token";
-    const Redirect_URI = "http://localhost:3000";
+    const Redirect_URI = "http://localhost:3000/";
     const Scope = "playlist-modify-private";
     window.location = `https://accounts.spotify.com/authorize?client_id=${Client_ID}&response_type=${Response_Type}&redirect_uri=${Redirect_URI}&scope=${Scope}&show_dialog=true`;
   };
@@ -49,7 +49,7 @@ function CardItem() {
       }
     })
       .then(res => res.json())
-      .then(data => setTrack(data.tracks.items));
+      .then(Data => setTrack(Data.tracks.items));
   };
 
   console.log(Track);

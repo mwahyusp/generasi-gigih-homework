@@ -1,10 +1,11 @@
 .card {
   display: flex;
   position: relative;
+  margin: 0rem 30rem;
 }
 
 .card-item {
-  display: inline-block;
+  display: grid;
   padding: 20px;
 }
 
