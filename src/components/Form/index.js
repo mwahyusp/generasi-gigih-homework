@@ -1,5 +1,5 @@
 import React from 'react'
-import Form from "./form.css"
+import Form from "./style.module.css"
 
 function index({handleCreate}) {
     return (
@@ -17,4 +17,4 @@ function index({handleCreate}) {
     )
 }
 
-export default index;
+export default index

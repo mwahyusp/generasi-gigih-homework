@@ -1,11 +1,11 @@
 body{
-  background-color: white;
+  background-color: #fdfefe;
   font-family: 'Poppins', sans-serif;
 }
 
 .App {
   max-width: 1440px;
-  display: inline;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;

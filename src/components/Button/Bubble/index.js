@@ -1,5 +1,5 @@
 import React from "react";
-import Bubble from "./Bubble.css";
+import Bubble from "./style.module.css";
 
 function index({ text, handleForm }) {
   return (

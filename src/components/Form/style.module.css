@@ -1,0 +1,46 @@
+.form {
+  padding: 30px 20px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.group label {
+  font-size: 20px;
+  font-weight: 700;
+  color: #b3b5b9;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #f0f3f9;
+  outline: none;
+  padding: 8px 12px;
+  background: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: rgb(131, 218, 131);
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 0 rgb(117, 192, 117);
+  transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+  background: rgb(124, 231, 124);
+  transition: none;
+}
+
+.btn:active {
+  box-shadow: none;
+  position: relative;
+  top: 4px;
+}

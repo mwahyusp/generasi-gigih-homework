@@ -1,24 +1,17 @@
-.btn{
-    border: none;
-    outline: none;
-    background: #81b71a;
-    color: white;
-    padding: 6px 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    transition: all .2s ease-in-out;
+.btn {
+  border: none;
+  outline: none;
+  background: rgb(156, 159, 167);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-out;
 }
 
-.btn:hover{
-    background: rgb(135, 138, 143);
-    transition: none;
-}
-
-.btn:active{
-    box-shadow: none;
-    position: relative;
-    top: 4px;
+.btn:hover {
+  background: rgb(135, 138, 143);   
 }

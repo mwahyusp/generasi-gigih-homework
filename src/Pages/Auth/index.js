@@ -38,7 +38,11 @@ function Index() {
           JOFY
         </Link>
         <ul className={Style.menu}>
+<<<<<<< HEAD
+          <li className={Style.menuTitle}>Recomend</li>
+=======
           <li className={Style.menuTitle}>Recommend</li>
+>>>>>>> e1cefb1914cf7740000a3037d0c5e43d4a99379b
           <li>
             <Link to="/create-playlist" className={Style.menuLink}><i className="fas fa-compact-disc" />For You</Link>
           </li>

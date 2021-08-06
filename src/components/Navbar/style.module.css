@@ -3,12 +3,41 @@ header {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  border-bottom: 2px solid #F0F3F9;
-  padding: 20px;
+  padding: 30px 50px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  backdrop-filter: blur(10px);
 }
 
-.logo{
+.logo {
   font-size: 30px;
   font-weight: 900;
-  color: rgb(108, 111, 119);
+  color: #1DB954;
+  text-decoration: none;
+}
+
+.navLeft ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.btnAuth {
+  border: none;
+  outline: none;
+  background: #1DB954;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btnAuth:hover {
+  background: #01471a;
 }

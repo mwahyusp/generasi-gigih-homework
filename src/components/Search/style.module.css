@@ -1,8 +1,9 @@
-input{
+.input{
     border: none;
     border-bottom: 2px solid #F0F3F9;
     outline: none;
     padding: 8px 12px;
+    background: none;
 }
 
 .btn{

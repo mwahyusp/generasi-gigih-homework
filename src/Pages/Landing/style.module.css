@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  padding: 0 50px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.left h1 {
+  font-family: "Nunito", sans-serif;
+  color: #d4bdff;
+  font-size: 70px;
+  line-height: 115%;
+  font-weight: 900;
+  margin: 0;
+}
+
+.left p {
+  font-family: "Nunito", sans-serif;
+  width: 57%;
+  color: #bab1c9;
+  font-weight: 600;
+  margin: 15px 0 30px;
+}
+
+.leftPrice {
+  color: #d4bdff;
+  font-weight: 900;
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.right img {
+  width: 88%;
+  animation: music 3s infinite;
+}
+
+@keyframes music {
+    0%{
+        position: relative;
+        top: 10px;
+    }
+    50%{
+        position: relative;
+        top: 0px;
+    }
+    100%{
+        position: relative;
+        top: 10px;
+    }
+}
+
+.btnAction {
+  border: none;
+  outline: none;
+  background: #b79fe2;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btnAction:hover {
+  background: #9382b4;
+}
