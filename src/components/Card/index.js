@@ -2,6 +2,7 @@ import React from "react";
 import Style from "./style.module.css";
 import Image from "../Image";
 import Description from "../Description";
+import { Button } from '@material-ui/core';
 
 function Card({title, artist, album, image, handleSelect, btnText}) {
   return (
@@ -16,8 +17,10 @@ function Card({title, artist, album, image, handleSelect, btnText}) {
           />
         </div>
       </div>
-      <div onClick={handleSelect} className={Style.btnSelect}>
+      <div>
+      <Button onClick={handleSelect} className={Style.btnSelect}>
         {btnText}
+      </Button>
       </div>
     </div>
   );

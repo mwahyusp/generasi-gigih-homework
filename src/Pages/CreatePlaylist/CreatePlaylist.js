@@ -58,8 +58,8 @@ function Index() {
         <Search handleSubmit={handleSearch} />
         <Profile />
       </div>
+      {Create && <Form handleCreate={handleCreate} />}
       <div className={Style.title}>
-        <p>Create Playlist</p>
         {TrackSelected.length > 0 && (
           <Bubble
             handleForm={handleForm}
@@ -67,7 +67,6 @@ function Index() {
           />
         )}
       </div>
-      {Create && <Form handleCreate={handleCreate} />}
       <div className={Style.cardItem}>
         {Tracks.map(Track =>
           TrackSelected.find(S => S.uri === Track.uri) ? (

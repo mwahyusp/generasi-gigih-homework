@@ -27,10 +27,10 @@
   margin-left: 20px;
 }
 
-.btnSelect {
+Button.btnSelect {
   border: none;
   outline: none;
-  background: rgb(209, 211, 240);
+  background: #1DB954;
   color: white;
   padding: 8px 15px;
   border-radius: 8px;
@@ -42,6 +42,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.btnSelect:hover {
-  background: rgb(176, 178, 206);
+Button.btnSelect:hover {
+  background: #006925;
 }

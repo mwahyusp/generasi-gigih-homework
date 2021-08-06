@@ -24,7 +24,7 @@ header {
   align-items: center;
 }
 
-.btnAuth {
+Button.btnAuth {
   border: none;
   outline: none;
   background: #1DB954;
@@ -38,6 +38,6 @@ header {
   transition: all 0.2s ease-in-out;
 }
 
-.btnAuth:hover {
+Button.btnAuth:hover {
   background: #01471a;
 }
