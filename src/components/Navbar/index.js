@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../Search/index";
+import Search from "../Search/Index";
 import Navbar from "./style.module.css";
 
 function Index({ handleSearch }) {
