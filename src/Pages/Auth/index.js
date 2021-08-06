@@ -35,14 +35,10 @@ function Index() {
     <div className={Style.container}>
       <div className={Style.sidebar}>
         <Link className={Style.logo} to="/">
-          JOFY
+          Music-App
         </Link>
-        <ul className={Style.menu}>
-<<<<<<< HEAD
-          <li className={Style.menuTitle}>Recomend</li>
-=======
+        {/* <ul className={Style.menu}>
           <li className={Style.menuTitle}>Recommend</li>
->>>>>>> e1cefb1914cf7740000a3037d0c5e43d4a99379b
           <li>
             <Link to="/create-playlist" className={Style.menuLink}><i className="fas fa-compact-disc" />For You</Link>
           </li>
@@ -70,7 +66,7 @@ function Index() {
           <li>
             <Link to="/liked-song" className={Style.menuLink}><i className="fas fa-compact-disc" />Jepun</Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
       <div className={Style.content}>
         <Switch>

@@ -12,15 +12,13 @@
   width: 160px;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid #e2d3fd50;
+  border-right: 2px solid #1DB95450;
 }
 
 .logo {
-  /* font-family: 'Lobster', cursive; */
-  font-family: "Righteous", cursive;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 900;
-  color: #b79fe2;
+  color: #1DB954;
   text-decoration: none;
   margin-bottom: 30px;
   margin-left: 30px;
@@ -36,7 +34,7 @@
 
 .menuTitle {
   font-size: 14px;
-  color: rgb(176, 178, 206);
+  color: #006925;
   font-weight: 700;
 }
 
@@ -52,10 +50,10 @@
 }
 
 .menuLink:hover {
-  /* background: #e2d3fd; */
+  /* background: #1DB954; */
   border-radius: 12px;
   /* color: white; */
-  color: #e2d3fd;
+  color: #1DB954;
 }
 
 .menuLink i {

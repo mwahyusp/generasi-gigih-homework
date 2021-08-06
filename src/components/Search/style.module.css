@@ -4,13 +4,22 @@
     outline: none;
     padding: 8px 12px;
     background: none;
+    margin-left: 20em;
 }
 
-.btn{
+Button.btn{
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     border: none;
     background: none;
     padding: 8px 12px;  
     cursor: pointer;
+    color: white;
+    background-color: #1DB954;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form {
+    margin: 0em 32em;
 }
