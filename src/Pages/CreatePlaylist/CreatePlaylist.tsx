@@ -3,11 +3,15 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import CardTrack from "../../components/Track";
-import Data from "../../Constants/DataDummy";
+import Data from "../../Data/sampleData";
 import Button from "../../components/Button/";
 import Form from "../../components/Form";
-import { getTrackData, filterData, createPlaylist } from "../../Util/Services";
-import { storeTrack, trackSelect, trackDeselect } from "../../Redux/trackSlice";
+import {
+  getTrackData,
+  filterData,
+  createPlaylist,
+} from "../../Requirement/Services";
+import { storeTrack, trackSelect, trackDeselect } from "../../Rdux/trackSlice";
 import Style from "./style.module.css";
 import Search from "../../components/Search/Index";
 import Profile from "../../components/Profile/Profile";

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Data from "../Constants/DataDummy";
+import Data from "../Data/sampleData";
 
 const initialState = {
   track: Data,
