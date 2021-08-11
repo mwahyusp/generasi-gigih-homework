@@ -1,8 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
-import Data from "../Data/sampleData";
+import Data from "../Constants/DataDummy";
 
 const initialState = {
-  track: Data
+  track: Data,
+  selected: [],
 };
 
 export const trackSlice = createSlice({
@@ -11,9 +12,15 @@ export const trackSlice = createSlice({
   reducers: {
     storeTrack: (state, action) => {
       state.track = action.payload;
-    }
-  }
+    },
+    trackSelect: (state, action) => {
+      state.selected = action.payload;
+    },
+    trackDeselect: (state, action) => {
+      state.selected = action.payload;
+    },
+  },
 });
 
-export const { storeTrack } = trackSlice.actions;
+export const { storeTrack, trackSelect, trackDeselect } = trackSlice.actions;
 export default trackSlice.reducer;
