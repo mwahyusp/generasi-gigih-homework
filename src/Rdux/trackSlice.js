@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import Data from "../Data/sampleData";
 
 const initialState = {
-  track: Data
+  track: Data,
 };
 
 export const trackSlice = createSlice({
@@ -11,8 +11,8 @@ export const trackSlice = createSlice({
   reducers: {
     storeTrack: (state, action) => {
       state.track = action.payload;
-    }
-  }
+    },
+  },
 });
 
 export const { storeTrack } = trackSlice.actions;

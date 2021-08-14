@@ -6,33 +6,37 @@ import Bubble from "../../components/Button/Bubble";
 import Search from "../../components/Search/Index";
 import Profile from "../../components/Profile/Profile";
 import Form from "../../components/Form";
-import { getTrackData, filterData, createPlaylist } from "../../Requirement/Services";
+import {
+  getTrackData,
+  filterData,
+  createPlaylist,
+} from "../../Requirement/Services";
 import { trackSelect, trackDeselect } from "../../Rdux/selectedSlice";
 import Style from "./style.module.css";
 
 function Index() {
   const [Tracks, setTracks] = useState(Data);
-  const TrackSelected = useSelector(state => state.selected.selected);
+  const TrackSelected = useSelector((state) => state.selected.selected);
   const [Create, setCreate] = useState(false);
-  const Token = useSelector(state => state.token.token);
-  const User = useSelector(state => state.user.user);
+  const Token = useSelector((state) => state.token.token);
+  const User = useSelector((state) => state.user.user);
   const dispatch = useDispatch();
 
-  const handleSearch = e => {
+  const handleSearch = (e) => {
     e.preventDefault();
     const query = e.target.query.value;
-    getTrackData(query, Token).then(data =>
+    getTrackData(query, Token).then((data) =>
       TrackSelected.length > 0
         ? setTracks(filterData(data.tracks.items, TrackSelected))
         : setTracks(data.tracks.items)
     );
   };
 
-  const handleDeselect = data => {
-    dispatch(trackDeselect(TrackSelected.filter(T => T.uri !== data.uri)));
+  const handleDeselect = (data) => {
+    dispatch(trackDeselect(TrackSelected.filter((T) => T.uri !== data.uri)));
   };
 
-  const handleSelect = data => {
+  const handleSelect = (data) => {
     dispatch(trackSelect([data, ...TrackSelected]));
   };
 
@@ -40,7 +44,7 @@ function Index() {
     setCreate(!Create);
   };
 
-  const handleCreate = async e => {
+  const handleCreate = async (e) => {
     e.preventDefault();
     if (TrackSelected.length > 0) {
       createPlaylist(e, User, Token, TrackSelected);
@@ -68,8 +72,8 @@ function Index() {
         )}
       </div>
       <div className={Style.cardItem}>
-        {Tracks.map(Track =>
-          TrackSelected.find(S => S.uri === Track.uri) ? (
+        {Tracks.map((Track) =>
+          TrackSelected.find((S) => S.uri === Track.uri) ? (
             <Card
               key={Track.uri}
               image={Track.album.images[0].url}
