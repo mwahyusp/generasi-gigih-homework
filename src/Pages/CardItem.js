@@ -16,7 +16,7 @@ function CardItem() {
     window.location = `https://accounts.spotify.com/authorize?client_id=${Client_ID}&response_type=${Response_Type}&redirect_uri=${Redirect_URI}&scope=${Scope}&show_dialog=true`;
   };
 
-  const getTokenFromUrl = hash => {
+  const getTokenFromUrl = (hash) => {
     const stringAfterHastag = hash.substring(1);
     const paramInUrl = stringAfterHastag.split("&");
     const paramSplitUp = paramInUrl.reduce((acc, currentValue) => {
@@ -35,21 +35,21 @@ function CardItem() {
     }
   }, []);
 
-  const handleSearch = e => {
+  const handleSearch = (e) => {
     e.preventDefault();
     const query = e.target.query.value;
     getTrackData(query);
   };
 
-  const getTrackData = query => {
+  const getTrackData = (query) => {
     const url = `https://api.spotify.com/v1/search?q=${query}&type=track&limit=10`;
     fetch(url, {
       headers: {
-        Authorization: "Bearer " + Token.access_token
-      }
+        Authorization: "Bearer " + Token.access_token,
+      },
     })
-      .then(res => res.json())
-      .then(Data => setTrack(Data.tracks.items));
+      .then((res) => res.json())
+      .then((Data) => setTrack(Data.tracks.items));
   };
 
   console.log(Track);
@@ -57,9 +57,11 @@ function CardItem() {
   return (
     <>
       <Navbar handleSearch={handleSearch} handleClick={handleClick} />
-      <h1 style={{ marginLeft: 20, marginBottom: 0, fontWeight: 600 }}>CREATE PLAYLIST</h1>
+      <h1 style={{ marginLeft: 20, marginBottom: 0, fontWeight: 600 }}>
+        CREATE PLAYLIST
+      </h1>
       <div className="card-item">
-        {Track.map(D => (
+        {Track.map((D) => (
           <Card
             key={D.id}
             image={D.album.images[0].url}
